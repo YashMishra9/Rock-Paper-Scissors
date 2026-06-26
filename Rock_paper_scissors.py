@@ -29,14 +29,16 @@ scissors = '''
 ---.__(___)
 '''
 
+if num not in [0,1,2]:
+    print("Invalid option!")
+    exit()
 if  num==0:
     print(rock)
 elif num==1:
     print(paper)
 elif num==2:
     print(scissors)
-else:
-    print("Invalid option brotato")
+
 
 print("Computer chose:")
 computer_choice= random.randint(0,2)
@@ -55,6 +57,6 @@ elif ((num==1 and computer_choice==0) or
              (num==2 and computer_choice==1)
                      or (num==0 and computer_choice==2)):
                                 print("Congrats!! You've won")
-                                
+
 else:
-    print("Shut the fuck up man!! You pressing the wrong buttons")
+    print("Nahhhh!!!! You're pressing the wrong buttons mate")
